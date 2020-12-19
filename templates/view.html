@@ -1,0 +1,9 @@
+{% extends "index.html"}
+{% block title} VIEW ALL {% endblock %}
+{% block content %}
+	{% for item in values %}
+		<p> NAME {{item.name}} , Email : {{item.email}}  </p>
+
+	{% endfor %}
+
+{% endblock %}
